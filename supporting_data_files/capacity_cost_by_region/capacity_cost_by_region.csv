@@ -1,0 +1,505 @@
+﻿region,sku,capacity_unit,pay_go_hour,reservation_hour
+Australia East,F2,2,0.42,0.25
+Australia East,F4,4,0.84,0.50
+Australia East,F8,8,1.68,1.00
+Australia East,F16,16,3.36,2.00
+Australia East,F32,32,6.72,4.00
+Australia East,F64,64,13.44,7.99
+Australia East,FT1,64,13.44,7.99
+Australia East,F128,128,26.88,15.99
+Australia East,F256,256,53.76,31.97
+Australia East,F512,512,107.52,63.94
+Australia East,F1024,1024,215.04,127.88
+Australia East,F2048,2048,430.08,255.77
+Australia Southeast,F2,2,0.42,0.25
+Australia Southeast,F4,4,0.84,0.50
+Australia Southeast,F8,8,1.68,1.00
+Australia Southeast,F16,16,3.36,2.00
+Australia Southeast,F32,32,6.72,4.00
+Australia Southeast,F64,64,13.44,7.99
+Australia Southeast,FT1,64,13.44,7.99
+Australia Southeast,F128,128,26.88,15.99
+Australia Southeast,F256,256,53.76,31.97
+Australia Southeast,F512,512,107.52,63.94
+Australia Southeast,F1024,1024,215.04,127.88
+Australia Southeast,F2048,2048,430.08,255.77
+Brazil South,F2,2,0.56,0.33
+Brazil South,F4,4,1.12,0.67
+Brazil South,F8,8,2.24,1.33
+Brazil South,F16,16,4.48,2.66
+Brazil South,F32,32,8.96,5.33
+Brazil South,F64,64,17.92,10.65
+Brazil South,FT1,64,17.92,10.65
+Brazil South,F128,128,35.84,21.31
+Brazil South,F256,256,71.68,42.61
+Brazil South,F512,512,143.36,85.22
+Brazil South,F1024,1024,286.72,170.43
+Brazil South,F2048,2048,573.44,340.87
+Canada Central,F2,2,0.40,0.24
+Canada Central,F4,4,0.80,0.48
+Canada Central,F8,8,1.60,0.95
+Canada Central,F16,16,3.20,1.90
+Canada Central,F32,32,6.40,3.81
+Canada Central,F64,64,12.80,7.61
+Canada Central,FT1,64,12.80,7.61
+Canada Central,F128,128,25.60,15.23
+Canada Central,F256,256,51.20,30.45
+Canada Central,F512,512,102.40,60.90
+Canada Central,F1024,1024,204.80,121.81
+Canada Central,F2048,2048,409.60,243.61
+Canada East,F2,2,0.40,0.24
+Canada East,F4,4,0.80,0.48
+Canada East,F8,8,1.60,0.95
+Canada East,F16,16,3.20,1.90
+Canada East,F32,32,6.40,3.81
+Canada East,F64,64,12.80,7.61
+Canada East,FT1,64,12.80,7.61
+Canada East,F128,128,25.60,15.23
+Canada East,F256,256,51.20,30.45
+Canada East,F512,512,102.40,60.90
+Canada East,F1024,1024,204.80,121.81
+Canada East,F2048,2048,409.60,243.61
+Central India,F2,2,0.40,0.24
+Central India,F4,4,0.80,0.48
+Central India,F8,8,1.60,0.95
+Central India,F16,16,3.20,1.90
+Central India,F32,32,6.40,3.81
+Central India,F64,64,12.80,7.61
+Central India,FT1,64,12.80,7.61
+Central India,F128,128,25.60,15.23
+Central India,F256,256,51.20,30.45
+Central India,F512,512,102.40,60.90
+Central India,F1024,1024,204.80,121.81
+Central India,F2048,2048,409.60,243.61
+Central US,F2,2,0.36,
+Central US,F4,4,0.72,
+Central US,F8,8,1.44,
+Central US,F16,16,2.88,
+Central US,F32,32,5.76,
+Central US,F64,64,11.52,
+Central US,FT1,64,11.52,
+Central US,F128,128,23.04,
+Central US,F256,256,46.08,
+Central US,F512,512,92.16,
+Central US,F1024,1024,184.32,
+Central US,F2048,2048,368.64,
+East Asia,F2,2,0.36,0.22
+East Asia,F4,4,0.72,0.43
+East Asia,F8,8,1.44,0.86
+East Asia,F16,16,2.88,1.71
+East Asia,F32,32,5.76,3.43
+East Asia,F64,64,11.52,6.85
+East Asia,FT1,64,11.52,6.85
+East Asia,F128,128,23.04,13.71
+East Asia,F256,256,46.08,27.41
+East Asia,F512,512,92.16,54.82
+East Asia,F1024,1024,184.32,109.65
+East Asia,F2048,2048,368.64,219.30
+East US,F2,2,0.36,0.22
+East US,F4,4,0.72,0.43
+East US,F8,8,1.44,0.86
+East US,F16,16,2.88,1.71
+East US,F32,32,5.76,3.43
+East US,F64,64,11.52,6.85
+East US,FT1,64,11.52,6.85
+East US,F128,128,23.04,13.71
+East US,F256,256,46.08,27.41
+East US,F512,512,92.16,54.82
+East US,F1024,1024,184.32,109.65
+East US,F2048,2048,368.64,219.30
+East US 2,F2,2,0.36,0.22
+East US 2,F4,4,0.72,0.43
+East US 2,F8,8,1.44,0.86
+East US 2,F16,16,2.88,1.71
+East US 2,F32,32,5.76,3.43
+East US 2,F64,64,11.52,6.85
+East US 2,FT1,64,11.52,6.85
+East US 2,F128,128,23.04,13.71
+East US 2,F256,256,46.08,27.41
+East US 2,F512,512,92.16,54.82
+East US 2,F1024,1024,184.32,109.65
+East US 2,F2048,2048,368.64,219.30
+France Central,F2,2,0.40,0.24
+France Central,F4,4,0.80,0.48
+France Central,F8,8,1.60,0.95
+France Central,F16,16,3.20,1.90
+France Central,F32,32,6.40,3.81
+France Central,F64,64,12.80,7.61
+France Central,FT1,64,12.80,7.61
+France Central,F128,128,25.60,15.23
+France Central,F256,256,51.20,30.45
+France Central,F512,512,102.40,60.90
+France Central,F1024,1024,204.80,121.81
+France Central,F2048,2048,409.60,243.61
+France South,F2,2,0.52,
+France South,F4,4,1.04,
+France South,F8,8,2.08,
+France South,F16,16,4.16,
+France South,F32,32,8.32,
+France South,F64,64,16.64,
+France South,FT1,64,16.64,
+France South,F128,128,33.28,
+France South,F256,256,66.56,
+France South,F512,512,133.12,
+France South,F1024,1024,266.24,
+France South,F2048,2048,532.48,
+Germany North,F2,2,0.56,
+Germany North,F4,4,1.12,
+Germany North,F8,8,2.24,
+Germany North,F16,16,4.48,
+Germany North,F32,32,8.96,
+Germany North,F64,64,17.92,
+Germany North,FT1,64,17.92,
+Germany North,F128,128,35.84,
+Germany North,F256,256,71.68,
+Germany North,F512,512,143.36,
+Germany North,F1024,1024,286.72,
+Germany North,F2048,2048,573.44,
+Germany West Central,F2,2,0.44,0.26
+Germany West Central,F4,4,0.88,0.52
+Germany West Central,F8,8,1.76,1.05
+Germany West Central,F16,16,3.52,2.09
+Germany West Central,F32,32,7.04,4.19
+Germany West Central,F64,64,14.08,8.37
+Germany West Central,FT1,64,14.08,8.37
+Germany West Central,F128,128,28.16,16.75
+Germany West Central,F256,256,56.32,33.49
+Germany West Central,F512,512,112.64,66.98
+Germany West Central,F1024,1024,225.28,133.96
+Germany West Central,F2048,2048,450.56,267.92
+Israel Central,F2,2,0.42,
+Israel Central,F4,4,0.84,
+Israel Central,F8,8,1.68,
+Israel Central,F16,16,3.36,
+Israel Central,F32,32,6.72,
+Israel Central,F64,64,13.44,
+Israel Central,FT1,64,13.44,
+Israel Central,F128,128,26.88,
+Israel Central,F256,256,53.76,
+Israel Central,F512,512,107.52,
+Israel Central,F1024,1024,215.04,
+Israel Central,F2048,2048,430.08,
+Italy North,F2,2,0.42,0.25
+Italy North,F4,4,0.84,0.50
+Italy North,F8,8,1.68,1.00
+Italy North,F16,16,3.36,2.00
+Italy North,F32,32,6.72,4.00
+Italy North,F64,64,13.44,7.99
+Italy North,FT1,64,13.44,7.99
+Italy North,F128,128,26.88,15.99
+Italy North,F256,256,53.76,31.97
+Italy North,F512,512,107.52,63.94
+Italy North,F1024,1024,215.04,127.88
+Italy North,F2048,2048,430.08,255.77
+Japan East,F2,2,0.42,0.25
+Japan East,F4,4,0.84,0.50
+Japan East,F8,8,1.68,1.00
+Japan East,F16,16,3.36,2.00
+Japan East,F32,32,6.72,4.00
+Japan East,F64,64,13.44,7.99
+Japan East,FT1,64,13.44,7.99
+Japan East,F128,128,26.88,15.99
+Japan East,F256,256,53.76,31.97
+Japan East,F512,512,107.52,63.94
+Japan East,F1024,1024,215.04,127.88
+Japan East,F2048,2048,430.08,255.77
+Japan West,F2,2,0.42,
+Japan West,F4,4,0.84,
+Japan West,F8,8,1.68,
+Japan West,F16,16,3.36,
+Japan West,F32,32,6.72,
+Japan West,F64,64,13.44,
+Japan West,FT1,64,13.44,
+Japan West,F128,128,26.88,
+Japan West,F256,256,53.76,
+Japan West,F512,512,107.52,
+Japan West,F1024,1024,215.04,
+Japan West,F2048,2048,430.08,
+Korea Central,F2,2,0.42,0.25
+Korea Central,F4,4,0.84,0.50
+Korea Central,F8,8,1.68,1.00
+Korea Central,F16,16,3.36,2.00
+Korea Central,F32,32,6.72,4.00
+Korea Central,F64,64,13.44,7.99
+Korea Central,FT1,64,13.44,7.99
+Korea Central,F128,128,26.88,15.99
+Korea Central,F256,256,53.76,31.97
+Korea Central,F512,512,107.52,63.94
+Korea Central,F1024,1024,215.04,127.88
+Korea Central,F2048,2048,430.08,255.77
+Korea South,F2,2,0.56,
+Korea South,F4,4,1.12,
+Korea South,F8,8,2.24,
+Korea South,F16,16,4.48,
+Korea South,F32,32,8.96,
+Korea South,F64,64,17.92,
+Korea South,FT1,64,17.92,
+Korea South,F128,128,35.84,
+Korea South,F256,256,71.68,
+Korea South,F512,512,143.36,
+Korea South,F1024,1024,286.72,
+Korea South,F2048,2048,573.44,
+North Central US,F2,2,0.36,0.22
+North Central US,F4,4,0.72,0.43
+North Central US,F8,8,1.44,0.86
+North Central US,F16,16,2.88,1.71
+North Central US,F32,32,5.76,3.43
+North Central US,F64,64,11.52,6.85
+North Central US,FT1,64,11.52,6.85
+North Central US,F128,128,23.04,13.71
+North Central US,F256,256,46.08,27.41
+North Central US,F512,512,92.16,54.82
+North Central US,F1024,1024,184.32,109.65
+North Central US,F2048,2048,368.64,219.30
+North Europe,F2,2,0.38,0.23
+North Europe,F4,4,0.76,0.45
+North Europe,F8,8,1.52,0.91
+North Europe,F16,16,3.04,1.81
+North Europe,F32,32,6.08,3.62
+North Europe,F64,64,12.16,7.23
+North Europe,FT1,64,12.16,7.23
+North Europe,F128,128,24.32,14.47
+North Europe,F256,256,48.64,28.93
+North Europe,F512,512,97.28,57.86
+North Europe,F1024,1024,194.56,115.73
+North Europe,F2048,2048,389.12,231.45
+Norway East,F2,2,0.48,0.29
+Norway East,F4,4,0.96,0.57
+Norway East,F8,8,1.92,1.14
+Norway East,F16,16,3.84,2.28
+Norway East,F32,32,7.68,4.57
+Norway East,F64,64,15.36,9.13
+Norway East,FT1,64,15.36,9.13
+Norway East,F128,128,30.72,18.27
+Norway East,F256,256,61.44,36.53
+Norway East,F512,512,122.88,73.06
+Norway East,F1024,1024,245.76,146.12
+Norway East,F2048,2048,491.52,292.24
+Norway West,F2,2,0.62,
+Norway West,F4,4,1.24,
+Norway West,F8,8,2.48,
+Norway West,F16,16,4.96,
+Norway West,F32,32,9.92,
+Norway West,F64,64,19.84,
+Norway West,FT1,64,19.84,
+Norway West,F128,128,39.68,
+Norway West,F256,256,79.36,
+Norway West,F512,512,158.72,
+Norway West,F1024,1024,317.44,
+Norway West,F2048,2048,634.88,
+Poland Central,F2,2,0.48,0.29
+Poland Central,F4,4,0.96,0.57
+Poland Central,F8,8,1.92,1.14
+Poland Central,F16,16,3.84,2.28
+Poland Central,F32,32,7.68,4.57
+Poland Central,F64,64,15.36,9.13
+Poland Central,FT1,64,15.36,9.13
+Poland Central,F128,128,30.72,18.27
+Poland Central,F256,256,61.44,36.53
+Poland Central,F512,512,122.88,73.06
+Poland Central,F1024,1024,245.76,146.12
+Poland Central,F2048,2048,491.52,292.24
+Qatar Central,F2,2,0.44,
+Qatar Central,F4,4,0.88,
+Qatar Central,F8,8,1.76,
+Qatar Central,F16,16,3.52,
+Qatar Central,F32,32,7.04,
+Qatar Central,F64,64,14.08,
+Qatar Central,FT1,64,14.08,
+Qatar Central,F128,128,28.16,
+Qatar Central,F256,256,56.32,
+Qatar Central,F512,512,112.64,
+Qatar Central,F1024,1024,225.28,
+Qatar Central,F2048,2048,450.56,
+South Africa North,F2,2,0.48,0.29
+South Africa North,F4,4,0.96,0.57
+South Africa North,F8,8,1.92,1.14
+South Africa North,F16,16,3.84,2.28
+South Africa North,F32,32,7.68,4.57
+South Africa North,F64,64,15.36,9.13
+South Africa North,FT1,64,15.36,9.13
+South Africa North,F128,128,30.72,18.27
+South Africa North,F256,256,61.44,36.53
+South Africa North,F512,512,122.88,73.06
+South Africa North,F1024,1024,245.76,146.12
+South Africa North,F2048,2048,491.52,292.24
+South Africa West,F2,2,0.62,
+South Africa West,F4,4,1.24,
+South Africa West,F8,8,2.48,
+South Africa West,F16,16,4.96,
+South Africa West,F32,32,9.92,
+South Africa West,F64,64,19.84,
+South Africa West,FT1,64,19.84,
+South Africa West,F128,128,39.68,
+South Africa West,F256,256,79.36,
+South Africa West,F512,512,158.72,
+South Africa West,F1024,1024,317.44,
+South Africa West,F2048,2048,634.88,
+South Central US,F2,2,0.36,0.22
+South Central US,F4,4,0.72,0.43
+South Central US,F8,8,1.44,0.86
+South Central US,F16,16,2.88,1.71
+South Central US,F32,32,5.76,3.43
+South Central US,F64,64,11.52,6.85
+South Central US,FT1,64,11.52,6.85
+South Central US,F128,128,23.04,13.71
+South Central US,F256,256,46.08,27.41
+South Central US,F512,512,92.16,54.82
+South Central US,F1024,1024,184.32,109.65
+South Central US,F2048,2048,368.64,219.30
+South India,F2,2,0.44,0.26
+South India,F4,4,0.88,0.52
+South India,F8,8,1.76,1.05
+South India,F16,16,3.52,2.09
+South India,F32,32,7.04,4.19
+South India,F64,64,14.08,8.37
+South India,FT1,64,14.08,8.37
+South India,F128,128,28.16,16.75
+South India,F256,256,56.32,33.49
+South India,F512,512,112.64,66.98
+South India,F1024,1024,225.28,133.96
+South India,F2048,2048,450.56,267.92
+Southeast Asia,F2,2,0.44,0.26
+Southeast Asia,F4,4,0.88,0.52
+Southeast Asia,F8,8,1.76,1.05
+Southeast Asia,F16,16,3.52,2.09
+Southeast Asia,F32,32,7.04,4.19
+Southeast Asia,F64,64,14.08,8.37
+Southeast Asia,FT1,64,14.08,8.37
+Southeast Asia,F128,128,28.16,16.75
+Southeast Asia,F256,256,56.32,33.49
+Southeast Asia,F512,512,112.64,66.98
+Southeast Asia,F1024,1024,225.28,133.96
+Southeast Asia,F2048,2048,450.56,267.92
+Sweden Central,F2,2,0.38,0.23
+Sweden Central,F4,4,0.76,0.45
+Sweden Central,F8,8,1.52,0.91
+Sweden Central,F16,16,3.04,1.81
+Sweden Central,F32,32,6.08,3.62
+Sweden Central,F64,64,12.16,7.23
+Sweden Central,FT1,64,12.16,7.23
+Sweden Central,F128,128,24.32,14.47
+Sweden Central,F256,256,48.64,28.93
+Sweden Central,F512,512,97.28,57.86
+Sweden Central,F1024,1024,194.56,115.73
+Sweden Central,F2048,2048,389.12,231.45
+Switzerland North,F2,2,0.48,0.29
+Switzerland North,F4,4,0.96,0.57
+Switzerland North,F8,8,1.92,1.14
+Switzerland North,F16,16,3.84,2.28
+Switzerland North,F32,32,7.68,4.57
+Switzerland North,F64,64,15.36,9.13
+Switzerland North,FT1,64,15.36,9.13
+Switzerland North,F128,128,30.72,18.27
+Switzerland North,F256,256,61.44,36.53
+Switzerland North,F512,512,122.88,73.06
+Switzerland North,F1024,1024,245.76,146.12
+Switzerland North,F2048,2048,491.52,292.24
+Switzerland West,F2,2,0.62,0.37
+Switzerland West,F4,4,1.24,0.74
+Switzerland West,F8,8,2.48,1.48
+Switzerland West,F16,16,4.96,2.95
+Switzerland West,F32,32,9.92,5.90
+Switzerland West,F64,64,19.84,11.80
+Switzerland West,FT1,64,19.84,11.80
+Switzerland West,F128,128,39.68,23.60
+Switzerland West,F256,256,79.36,47.20
+Switzerland West,F512,512,158.72,94.39
+Switzerland West,F1024,1024,317.44,188.79
+Switzerland West,F2048,2048,634.88,377.57
+UAE Central,F2,2,0.56,
+UAE Central,F4,4,1.12,
+UAE Central,F8,8,2.24,
+UAE Central,F16,16,4.48,
+UAE Central,F32,32,8.96,
+UAE Central,F64,64,17.92,
+UAE Central,FT1,64,17.92,
+UAE Central,F128,128,35.84,
+UAE Central,F256,256,71.68,
+UAE Central,F512,512,143.36,
+UAE Central,F1024,1024,286.72,
+UAE Central,F2048,2048,573.44,
+UAE North,F2,2,0.44,0.26
+UAE North,F4,4,0.88,0.52
+UAE North,F8,8,1.76,1.05
+UAE North,F16,16,3.52,2.09
+UAE North,F32,32,7.04,4.19
+UAE North,F64,64,14.08,8.37
+UAE North,FT1,64,14.08,8.37
+UAE North,F128,128,28.16,16.75
+UAE North,F256,256,56.32,33.49
+UAE North,F512,512,112.64,66.98
+UAE North,F1024,1024,225.28,133.96
+UAE North,F2048,2048,450.56,267.92
+UK South,F2,2,0.42,0.25
+UK South,F4,4,0.84,0.50
+UK South,F8,8,1.68,1.00
+UK South,F16,16,3.36,2.00
+UK South,F32,32,6.72,4.00
+UK South,F64,64,13.44,7.99
+UK South,FT1,64,13.44,7.99
+UK South,F128,128,26.88,15.99
+UK South,F256,256,53.76,31.97
+UK South,F512,512,107.52,63.94
+UK South,F1024,1024,215.04,127.88
+UK South,F2048,2048,430.08,255.77
+UK West,F2,2,0.42,0.25
+UK West,F4,4,0.84,0.50
+UK West,F8,8,1.68,1.00
+UK West,F16,16,3.36,2.00
+UK West,F32,32,6.72,4.00
+UK West,F64,64,13.44,7.99
+UK West,FT1,64,13.44,7.99
+UK West,F128,128,26.88,15.99
+UK West,F256,256,53.76,31.97
+UK West,F512,512,107.52,63.94
+UK West,F1024,1024,215.04,127.88
+UK West,F2048,2048,430.08,255.77
+West Europe,F2,2,0.44,0.26
+West Europe,F4,4,0.88,0.52
+West Europe,F8,8,1.76,1.05
+West Europe,F16,16,3.52,2.09
+West Europe,F32,32,7.04,4.19
+West Europe,F64,64,14.08,8.37
+West Europe,FT1,64,14.08,8.37
+West Europe,F128,128,28.16,16.75
+West Europe,F256,256,56.32,33.49
+West Europe,F512,512,112.64,66.98
+West Europe,F1024,1024,225.28,133.96
+West Europe,F2048,2048,450.56,267.92
+West US,F2,2,0.40,0.24
+West US,F4,4,0.80,0.48
+West US,F8,8,1.60,0.95
+West US,F16,16,3.20,1.90
+West US,F32,32,6.40,3.81
+West US,F64,64,12.80,7.61
+West US,FT1,64,12.80,7.61
+West US,F128,128,25.60,15.23
+West US,F256,256,51.20,30.45
+West US,F512,512,102.40,60.90
+West US,F1024,1024,204.80,121.81
+West US,F2048,2048,409.60,243.61
+West US 2,F2,2,0.36,0.22
+West US 2,F4,4,0.72,0.43
+West US 2,F8,8,1.44,0.86
+West US 2,F16,16,2.88,1.71
+West US 2,F32,32,5.76,3.43
+West US 2,F64,64,11.52,6.85
+West US 2,FT1,64,11.52,6.85
+West US 2,F128,128,23.04,13.71
+West US 2,F256,256,46.08,27.41
+West US 2,F512,512,92.16,54.82
+West US 2,F1024,1024,184.32,109.65
+West US 2,F2048,2048,368.64,219.30
+West US 3,F2,2,0.36,0.22
+West US 3,F4,4,0.72,0.43
+West US 3,F8,8,1.44,0.86
+West US 3,F16,16,2.88,1.71
+West US 3,F32,32,5.76,3.43
+West US 3,F64,64,11.52,6.85
+West US 3,FT1,64,11.52,6.85
+West US 3,F128,128,23.04,13.71
+West US 3,F256,256,46.08,27.41
+West US 3,F512,512,92.16,54.82
+West US 3,F1024,1024,184.32,109.65
+West US 3,F2048,2048,368.64,219.30

@@ -1,0 +1,1188 @@
+{
+  "name": "Capacity Metrics Direct Lake",
+  "id": "c3227fee-77c3-4b42-a533-42d2d013acda",
+  "compatibilityLevel": 1605,
+  "model": {
+    "culture": "en-US",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "Billing Type",
+        "columns": [
+          {
+            "name": "Billing Type Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Billing_Type_Id",
+            "formatString": "0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Billing Type",
+            "dataType": "string",
+            "sourceColumn": "Billing_Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Billing Type",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Billing_Type",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "dataCategory": "Time",
+        "columns": [
+          {
+            "name": "Calendar Date Key",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Calendar_Date_Key",
+            "formatString": "0",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Calendar Date",
+            "dataType": "dateTime",
+            "isKey": true,
+            "sourceColumn": "Calendar_Date",
+            "formatString": "Short Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Weekday Number",
+            "dataType": "int64",
+            "sourceColumn": "Calendar_Weekday_Number",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Calendar Weekday",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Weekday",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Month Number",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Month_Number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Month",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Year Month Number",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Year_Month_Number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Month Year",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Month_Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Quarter Number",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Quarter_Number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Quarter",
+            "dataType": "string",
+            "sourceColumn": "Calendar_Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Calendar Year Number",
+            "dataType": "int64",
+            "sourceColumn": "Calendar_Year_Number",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Date",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Item",
+        "columns": [
+          {
+            "name": "Item Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Item_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "sourceColumn": "Workspace_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Item Name",
+            "dataType": "string",
+            "sourceColumn": "Item_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Item Type",
+            "dataType": "string",
+            "sourceColumn": "Item_Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Item",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Item",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Operation",
+        "columns": [
+          {
+            "name": "Operation Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Operation_Id",
+            "formatString": "0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Operation Name",
+            "dataType": "string",
+            "sourceColumn": "Operation_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Operation",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Operation",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Workspace",
+        "columns": [
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Workspace_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Workspace Name",
+            "dataType": "string",
+            "sourceColumn": "Workspace_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Capacity_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Workspace",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Workspace",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Capacity Metrics",
+        "columns": [
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Capacity_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Workspace_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Item Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Item_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Date",
+            "formatString": "Long Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Time",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Operation Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Operation_Id",
+            "formatString": "0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Units Consumed",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Capacity_Units_Consumed",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Activity Duration",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Activity_Duration",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Total_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Users",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Users",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Average Activity Duration",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Average_Activity_Duration",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Minutes Throttled",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Minutes_Throttled",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Failed Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Failed_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rejected Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Rejected_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Successful Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Successful_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "In Progress Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "In_Progress_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Cancelled Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Cancelled_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Invalid Operations",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Invalid_Operations",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Unit Seconds Consumed",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Capacity_Unit_Seconds_Consumed",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Percentage Daily Consumption",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Percentage_Daily_Consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Percentage Hourly Consumption",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Percentage_Hourly_Consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Activity Cost Pay Go",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Activity_Cost_Pay_Go",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Activity Cost Reservation",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Activity_Cost_Reservation",
+            "summarizeBy": "sum"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Capacity Metrics",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Capacity_Metrics",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Workspace Storage",
+        "columns": [
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Workspace_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Capacity_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Date",
+            "formatString": "Long Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Time",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Billing Type Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Billing_Type_Id",
+            "formatString": "0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Operation Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Operation_Id",
+            "formatString": "0",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Workload Kind",
+            "dataType": "string",
+            "sourceColumn": "Workload_Kind",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Storage Type",
+            "dataType": "string",
+            "sourceColumn": "Storage_Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Static Storage Gb",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Static_Storage_Gb",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Utilization Gb",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Utilization_Gb",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Static Storage Standard Cost",
+            "dataType": "decimal",
+            "isHidden": true,
+            "sourceColumn": "Static_Storage_Standard_Cost",
+            "summarizeBy": "sum"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Workspace Storage",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Workspace_Storage",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Semantic Model Refresh Log",
+        "isHidden": true,
+        "columns": [
+          {
+            "name": "Start Time",
+            "dataType": "dateTime",
+            "sourceColumn": "Start_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "End Time",
+            "dataType": "dateTime",
+            "sourceColumn": "End_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Type",
+            "dataType": "string",
+            "sourceColumn": "Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Commit Mode",
+            "dataType": "string",
+            "sourceColumn": "Commit_Mode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Extended Status",
+            "dataType": "string",
+            "sourceColumn": "Extended_Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Current Refresh Type",
+            "dataType": "string",
+            "sourceColumn": "Current_Refresh_Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Number Of Attempts",
+            "dataType": "int64",
+            "sourceColumn": "Number_Of_Attempts",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Capacity Metrics Workspace",
+            "dataType": "string",
+            "sourceColumn": "Capacity_Metrics_Workspace",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Metrics Model",
+            "dataType": "string",
+            "sourceColumn": "Capacity_Metrics_Model",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Semantic Model Refresh Log",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Semantic_Model_Refresh_Log",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measure Table",
+        "columns": [
+          {
+            "name": "Value",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Value",
+            "formatString": "0",
+            "summarizeBy": "sum"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measure Table",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Measure_Table",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "In Progress Operations",
+            "expression": "SUM ( 'Capacity Metrics'[In Progress Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Cancelled Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Cancelled Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Failed Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Failed Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Total Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Total Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Rejected Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Rejected Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Successful Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Successful Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Users",
+            "expression": "SUM ( 'Capacity Metrics'[Users] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Users"
+          },
+          {
+            "name": "Minutes Throttled",
+            "expression": "SUM ( 'Capacity Metrics'[Minutes Throttled] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Durations"
+          },
+          {
+            "name": "Capacity Units Consumed",
+            "expression": "SUM ( 'Capacity Metrics'[Capacity Units Consumed] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Activity Duration (seconds)",
+            "expression": "SUM ( 'Capacity Metrics'[Activity Duration] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Durations"
+          },
+          {
+            "name": "Capacity Unit Seconds Consumed",
+            "expression": "SUM ( 'Capacity Metrics'[Capacity Unit Seconds Consumed] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Activity Cost (Reserved)",
+            "expression": "SUM ( 'Capacity Metrics'[Activity Cost Reservation] )",
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Capacity Metrics\\Costs"
+          },
+          {
+            "name": "Activity Cost (Pay Go)",
+            "expression": "SUM ( 'Capacity Metrics'[Activity Cost Pay Go] )",
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Capacity Metrics\\Costs"
+          },
+          {
+            "name": "Percentage of Daily Capacity Units Consumed",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Capacity Unit Seconds Consumed]",
+              "    ,[Available Daily Capacity Unit Seconds]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Percentage of Hourly Capacity Units Consumed",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Average Hourly Capacity Unit Seconds Consumed]",
+              "    ,[Available Hourly Capacity Unit Seconds]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Available Daily Capacity Unit Seconds",
+            "expression": [
+              "",
+              "VAR numberOfDays = COUNTROWS('Date')",
+              "RETURN",
+              "    MAX ( 'Capacity'[Capacity Unit] ) * 60 * 60 * 24 * numberOfDays"
+            ],
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Available Hourly Capacity Unit Seconds",
+            "expression": "MAX ( 'Capacity'[Capacity Unit] ) * 60 * 60",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Average Hourly Capacity Unit Seconds Consumed",
+            "expression": [
+              "",
+              "AVERAGEX(",
+              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    ,[Capacity Unit Seconds Consumed]",
+              ")"
+            ],
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Average Hourly Activity Cost (Reserved)",
+            "expression": [
+              "",
+              "AVERAGEX(",
+              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    ,[Activity Cost (Reserved)]",
+              ")"
+            ],
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Capacity Metrics\\Costs"
+          },
+          {
+            "name": "Average Hourly Percentage Consumption",
+            "expression": [
+              "",
+              "AVERAGEX(",
+              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    ,[Percentage of Hourly Capacity Units Consumed]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Capacity Units"
+          },
+          {
+            "name": "Operation Fail Rate",
+            "expression": [
+              "DIVIDE(",
+              "    [Failed Operations]",
+              "    ,[Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Operation Cancelled Rate",
+            "expression": [
+              "DIVIDE(",
+              "    [Cancelled Operations]",
+              "    ,[Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Operation Invalid Rate",
+            "expression": [
+              "DIVIDE(",
+              "    [Invalid Operations]",
+              "    ,[Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Operation Success Rate",
+            "expression": [
+              "DIVIDE (",
+              "    [Successful Operations],",
+              "    [Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Invalid Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Invalid Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations"
+          },
+          {
+            "name": "Standard Storage Cost",
+            "expression": [
+              "",
+              "SUMX(",
+              "    'Workspace Storage'",
+              "    ,'Workspace Storage'[Static Storage Gb] * RELATED(Capacity[Onelake Storage Cost])",
+              ")"
+            ],
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Workspace Storage\\Cost"
+          },
+          {
+            "name": "Static Storage (GB)",
+            "expression": "SUM('Workspace Storage'[Static Storage Gb])",
+            "formatString": "#,##0.00",
+            "displayFolder": "Workspace Storage\\Storage"
+          },
+          {
+            "name": "Average Storage (GB) Per Day",
+            "expression": [
+              "",
+              "AVERAGEX(",
+              "    VALUES( 'Date'[Calendar Date] )",
+              "    ,[Static Storage (GB)]",
+              ")"
+            ],
+            "formatString": "#,##0.00",
+            "displayFolder": "Workspace Storage\\Storage"
+          },
+          {
+            "name": "Average Storage Cost Per Day",
+            "expression": [
+              "",
+              "AVERAGEX(",
+              "    VALUES( 'Date'[Calendar Date] )",
+              "    ,[Standard Storage Cost]",
+              ")"
+            ],
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Workspace Storage\\Cost"
+          }
+        ]
+      },
+      {
+        "name": "Capacity",
+        "columns": [
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Capacity_Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sku",
+            "dataType": "string",
+            "sourceColumn": "Sku",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Unit",
+            "dataType": "string",
+            "sourceColumn": "Capacity_Unit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Pay Go Hour",
+            "dataType": "string",
+            "sourceColumn": "Pay_Go_Hour",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Reservation Hour",
+            "dataType": "string",
+            "sourceColumn": "Reservation_Hour",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Onelake Storage Cost",
+            "dataType": "string",
+            "sourceColumn": "Onelake_Storage_Cost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Onelake Bcdr Storage Cost",
+            "dataType": "string",
+            "sourceColumn": "Onelake_Bcdr_Storage_Cost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Onelake Cache Cost",
+            "dataType": "string",
+            "sourceColumn": "Onelake_Cache_Cost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "dataType": "string",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Inserted_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated_Date_Time",
+            "formatString": "General Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capacity Name",
+            "dataType": "string",
+            "sourceColumn": "Capacity_Name",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Capacity",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Capacity",
+              "expressionSource": "DatabaseQuery"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "Relationship",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Billing Type Id",
+        "toTable": "Billing Type",
+        "toColumn": "Billing Type Id"
+      },
+      {
+        "name": "Relationship 1",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Capacity Id",
+        "toTable": "Capacity",
+        "toColumn": "Capacity Id"
+      },
+      {
+        "name": "Relationship 2",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Date",
+        "toTable": "Date",
+        "toColumn": "Calendar Date"
+      },
+      {
+        "name": "Relationship 3",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Operation Id",
+        "toTable": "Operation",
+        "toColumn": "Operation Id"
+      },
+      {
+        "name": "Relationship 4",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Workspace Id",
+        "toTable": "Workspace",
+        "toColumn": "Workspace Id"
+      },
+      {
+        "name": "Relationship 5",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Capacity Id",
+        "toTable": "Capacity",
+        "toColumn": "Capacity Id"
+      },
+      {
+        "name": "Relationship 6",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Date",
+        "toTable": "Date",
+        "toColumn": "Calendar Date"
+      },
+      {
+        "name": "Relationship 7",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Item Id",
+        "toTable": "Item",
+        "toColumn": "Item Id"
+      },
+      {
+        "name": "Relationship 8",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Operation Id",
+        "toTable": "Operation",
+        "toColumn": "Operation Id"
+      },
+      {
+        "name": "Relationship 9",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Workspace Id",
+        "toTable": "Workspace",
+        "toColumn": "Workspace Id"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": [
+          "let",
+          "\tdatabase = Sql.Database(\"oyc7jcieq54utc7nirqtz24v34-owzygjmrtsfuxeuqanprzcpwya.datawarehouse.fabric.microsoft.com\", \"4a938f4d-6a81-4720-98a7-470ce66a6113\")",
+          "in",
+          "\tdatabase"
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__LastRPTime",
+        "value": "133582008999987912"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Shared Expressions\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"],\"TmdlOptions\":{\"IncludeRefs\":false,\"ExpressionTrimStyle\":\"TrimTrailingWhitespaces\"}}"
+      }
+    ]
+  }
+}

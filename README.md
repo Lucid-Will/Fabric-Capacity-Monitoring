@@ -2,7 +2,7 @@
 
 Lucid Capacity Monitoring is an open-source project developed to monitor and analyze Microsoft Fabric capacity metrics in a comprehensive and efficient manner. It aims to provide a clear and concise view of various capacity metrics such as operations, storage, and capacity unit consumption.
 
-The Lucid monitoring solution can also be used to assist with scoping exercises such as determining how much compute would be needed to run various workloads. For example, for a team considering Fabric, `the Lucid monitoring solution can be used along with a Fabric trial capacity to monitor activity over a duration of time enabling more accurate provisioning of capacity resources`.
+The Lucid monitoring solution can also be used to assist with scoping exercises such as determining how much compute would be needed to run various workloads. For example, for a team considering Fabric, `the Lucid monitoring solution can be used along with a Fabric trial capacity to monitor activity over a period of time, enabling more accurate provisioning of capacity resources`.
 
 Features:
 - **Capacity Metrics**: Monitor various capacity metrics like operations, users, minutes throttled, storage used, and capacity units consumed.

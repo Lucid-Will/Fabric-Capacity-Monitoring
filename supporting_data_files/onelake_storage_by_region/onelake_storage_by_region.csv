@@ -1,127 +1,127 @@
-﻿region,storage_type,cost
-Central US,OneLake storage,0.023 
-Central US,OneLake BCDR storage,0.0414 
-Central US,OneLake cache,0.246 
-East US,OneLake storage,0.026 
-East US,OneLake BCDR storage,0.0468 
-East US,OneLake cache,0.20 
-East US 2,OneLake storage,0.023 
-East US 3,OneLake BCDR storage,0.0414 
-East US 4,OneLake cache,0.20 
-North Central US,OneLake storage,0.026 
-North Central US,OneLake BCDR storage,0.0206 
-North Central US,OneLake cache,0.24 
-South Central US,OneLake storage,0.023 
-South Central US,OneLake BCDR storage,0.0252 
-South Central US,OneLake cache,0.24 
-West Central US,OneLake storage,0.023 
-West Central US,OneLake BCDR storage,0.0311 
-West Central US,OneLake cache,0.24 
-West US,OneLake storage,0.026 
-West US,OneLake BCDR storage,0.0416 
-West US,OneLake cache,0.26 
-West US 2,OneLake storage,0.023 
-West US 3,OneLake BCDR storage,0.0414 
-West US 4,OneLake cache,0.20 
-West US 3,OneLake storage,0.023 
-West US 4,OneLake BCDR storage,0.0416 
-West US 5,OneLake cache,0.266 
-UK South,OneLake storage,0.024 
-UK South,OneLake BCDR storage,0.0624 
-UK South,OneLake cache,0.25 
-UK West,OneLake storage,0.024 
-UK West,OneLake BCDR storage,0.0447 
-UK West,OneLake cache,0.262 
-UAE Central,OneLake storage,0.0323 
-UAE Central,OneLake BCDR storage,0.0405 
-UAE Central,OneLake cache,0.336 
-UAE North,OneLake storage,0.0253 
-UAE North,OneLake BCDR storage,0.0312 
-UAE North,OneLake cache,0.264 
-Switzerland North,OneLake storage,0.0264 
-Switzerland North,OneLake BCDR storage,0.0616 
-Switzerland North,OneLake cache,0.298 
-Switzerland West,OneLake storage,0.0264 
-Switzerland West,OneLake BCDR storage,0.0616 
-Switzerland West,OneLake cache,0.298 
-Sweden Central,OneLake storage,0.023 
-Sweden Central,OneLake BCDR storage,0.0416 
-Sweden Central,OneLake cache,0.26 
-Qatar Central,OneLake storage,0.025 
-Qatar Central,OneLake BCDR storage,0.0416 
-Qatar Central,OneLake cache,0.264 
-Poland Central,OneLake storage,0.0264 
-Poland Central,OneLake BCDR storage,0.0416 
-Poland Central,OneLake cache,0.286 
-Norway East,OneLake storage,0.0264 
-Norway East,OneLake BCDR storage,0.0488 
-Norway East,OneLake cache,0.286 
-Norway West,OneLake storage,0.0343 
-Norway West,OneLake BCDR storage,0.0622 
-Norway West,OneLake cache,0.372 
-Korea Central,OneLake storage,0.025 
-Korea Central,OneLake BCDR storage,0.0581 
-Korea Central,OneLake cache,0.27 
-Korea South,OneLake storage,0.025 
-Korea South,OneLake BCDR storage,0.0489 
-Korea South,OneLake cache,0.25 
-Japan East,OneLake storage,0.025 
-Japan East,OneLake BCDR storage,0.045 
-Japan East,OneLake cache,0.29 
-Japan West,OneLake storage,0.025 
-Japan West,OneLake BCDR storage,0.0416 
-Japan West,OneLake cache,0.31 
-Italy North,OneLake storage,0.024 
-Italy North,OneLake BCDR storage,0.0546 
-Italy North,OneLake cache,0.26 
-Central India,OneLake storage,0.025 
-Central India,OneLake BCDR storage,0.0603 
-Central India,OneLake cache,0.28 
-South India,OneLake storage,0.0298 
-South India,OneLake BCDR storage,0.052 
-South India,OneLake cache,0.302 
-Germany North,OneLake storage,0.0293 
-Germany North,OneLake BCDR storage,0.0487 
-Germany North,OneLake cache,0.338 
-Germany West Central,OneLake storage,0.024 
-Germany West Central,OneLake BCDR storage,0.0374 
-Germany West Central,OneLake cache,0.259 
-France Central,OneLake storage,0.024 
-France Central,OneLake BCDR storage,0.0432 
-France Central,OneLake cache,0.25 
-France South,OneLake storage,0.0312 
-France South,OneLake BCDR storage,0.0565 
-France South,OneLake cache,0.326 
-North Europe,OneLake storage,0.023 
-North Europe,OneLake BCDR storage,0.0426 
-North Europe,OneLake cache,0.24 
-West Europe,OneLake storage,0.024 
-West Europe,OneLake BCDR storage,0.046 
-West Europe,OneLake cache,0.26 
-Canada Central,OneLake storage,0.025 
-Canada Central,OneLake BCDR storage,0.045 
-Canada Central,OneLake cache,0.24 
-Canada East,OneLake storage,0.025 
-Canada East,OneLake BCDR storage,0.0437 
-Canada East,OneLake cache,0.24 
-Brazil South,OneLake storage,0.0407 
-Brazil South,OneLake BCDR storage,0.0734 
-Brazil South,OneLake cache,0.40 
-Australia East,OneLake storage,0.025 
-Australia East,OneLake BCDR storage,0.045 
-Australia East,OneLake cache,0.29 
-Australia Southeast,OneLake storage,0.0125 
-Australia Southeast,OneLake BCDR storage,0.0403 
-Australia Southeast,OneLake cache,0.28 
-East Asia,OneLake storage,0.03 
-East Asia,OneLake BCDR storage,0.0416 
-East Asia,OneLake cache,0.31 
-Southeast Asia,OneLake storage,0.025 
-Southeast Asia,OneLake BCDR storage,0.049 
-Southeast Asia,OneLake cache,0.26 
-South Africa North,OneLake storage,0.0274 
-South Africa North,OneLake BCDR storage,0.0321 
-South Africa North,OneLake cache,0.292 
-South Africa West,OneLake storage,0.0343 
-South Africa West,OneLake BCDR storage,0.0247 
-South Africa West,OneLake cache,0.379 
+region,storage_type,cost
+Central US,OneLake storage,0.023
+Central US,OneLake BCDR storage,0.0414
+Central US,OneLake cache,0.246
+East US,OneLake storage,0.026
+East US,OneLake BCDR storage,0.0468
+East US,OneLake cache,0.2
+East US 2,OneLake storage,0.023
+East US 3,OneLake BCDR storage,0.0414
+East US 4,OneLake cache,0.2
+North Central US,OneLake storage,0.026
+North Central US,OneLake BCDR storage,0.0206
+North Central US,OneLake cache,0.24
+South Central US,OneLake storage,0.023
+South Central US,OneLake BCDR storage,0.0252
+South Central US,OneLake cache,0.24
+West Central US,OneLake storage,0.023
+West Central US,OneLake BCDR storage,0.0311
+West Central US,OneLake cache,0.24
+West US,OneLake storage,0.026
+West US,OneLake BCDR storage,0.0416
+West US,OneLake cache,0.26
+West US 2,OneLake storage,0.023
+West US 3,OneLake BCDR storage,0.0414
+West US 4,OneLake cache,0.2
+West US 3,OneLake storage,0.023
+West US 4,OneLake BCDR storage,0.0416
+West US 5,OneLake cache,0.266
+UK South,OneLake storage,0.024
+UK South,OneLake BCDR storage,0.0624
+UK South,OneLake cache,0.25
+UK West,OneLake storage,0.024
+UK West,OneLake BCDR storage,0.0447
+UK West,OneLake cache,0.262
+UAE Central,OneLake storage,0.0323
+UAE Central,OneLake BCDR storage,0.0405
+UAE Central,OneLake cache,0.336
+UAE North,OneLake storage,0.0253
+UAE North,OneLake BCDR storage,0.0312
+UAE North,OneLake cache,0.264
+Switzerland North,OneLake storage,0.0264
+Switzerland North,OneLake BCDR storage,0.0616
+Switzerland North,OneLake cache,0.298
+Switzerland West,OneLake storage,0.0264
+Switzerland West,OneLake BCDR storage,0.0616
+Switzerland West,OneLake cache,0.298
+Sweden Central,OneLake storage,0.023
+Sweden Central,OneLake BCDR storage,0.0416
+Sweden Central,OneLake cache,0.26
+Qatar Central,OneLake storage,0.025
+Qatar Central,OneLake BCDR storage,0.0416
+Qatar Central,OneLake cache,0.264
+Poland Central,OneLake storage,0.0264
+Poland Central,OneLake BCDR storage,0.0416
+Poland Central,OneLake cache,0.286
+Norway East,OneLake storage,0.0264
+Norway East,OneLake BCDR storage,0.0488
+Norway East,OneLake cache,0.286
+Norway West,OneLake storage,0.0343
+Norway West,OneLake BCDR storage,0.0622
+Norway West,OneLake cache,0.372
+Korea Central,OneLake storage,0.025
+Korea Central,OneLake BCDR storage,0.0581
+Korea Central,OneLake cache,0.27
+Korea South,OneLake storage,0.025
+Korea South,OneLake BCDR storage,0.0489
+Korea South,OneLake cache,0.25
+Japan East,OneLake storage,0.025
+Japan East,OneLake BCDR storage,0.045
+Japan East,OneLake cache,0.29
+Japan West,OneLake storage,0.025
+Japan West,OneLake BCDR storage,0.0416
+Japan West,OneLake cache,0.31
+Italy North,OneLake storage,0.024
+Italy North,OneLake BCDR storage,0.0546
+Italy North,OneLake cache,0.26
+Central India,OneLake storage,0.025
+Central India,OneLake BCDR storage,0.0603
+Central India,OneLake cache,0.28
+South India,OneLake storage,0.0298
+South India,OneLake BCDR storage,0.052
+South India,OneLake cache,0.302
+Germany North,OneLake storage,0.0293
+Germany North,OneLake BCDR storage,0.0487
+Germany North,OneLake cache,0.338
+Germany West Central,OneLake storage,0.024
+Germany West Central,OneLake BCDR storage,0.0374
+Germany West Central,OneLake cache,0.259
+France Central,OneLake storage,0.024
+France Central,OneLake BCDR storage,0.0432
+France Central,OneLake cache,0.25
+France South,OneLake storage,0.0312
+France South,OneLake BCDR storage,0.0565
+France South,OneLake cache,0.326
+North Europe,OneLake storage,0.023
+North Europe,OneLake BCDR storage,0.0426
+North Europe,OneLake cache,0.24
+West Europe,OneLake storage,0.024
+West Europe,OneLake BCDR storage,0.046
+West Europe,OneLake cache,0.26
+Canada Central,OneLake storage,0.025
+Canada Central,OneLake BCDR storage,0.045
+Canada Central,OneLake cache,0.24
+Canada East,OneLake storage,0.025
+Canada East,OneLake BCDR storage,0.0437
+Canada East,OneLake cache,0.24
+Brazil South,OneLake storage,0.0407
+Brazil South,OneLake BCDR storage,0.0734
+Brazil South,OneLake cache,0.4
+Australia East,OneLake storage,0.025
+Australia East,OneLake BCDR storage,0.045
+Australia East,OneLake cache,0.29
+Australia Southeast,OneLake storage,0.0125
+Australia Southeast,OneLake BCDR storage,0.0403
+Australia Southeast,OneLake cache,0.28
+East Asia,OneLake storage,0.03
+East Asia,OneLake BCDR storage,0.0416
+East Asia,OneLake cache,0.31
+Southeast Asia,OneLake storage,0.025
+Southeast Asia,OneLake BCDR storage,0.049
+Southeast Asia,OneLake cache,0.26
+South Africa North,OneLake storage,0.0274
+South Africa North,OneLake BCDR storage,0.0321
+South Africa North,OneLake cache,0.292
+South Africa West,OneLake storage,0.0343
+South Africa West,OneLake BCDR storage,0.0247
+South Africa West,OneLake cache,0.379

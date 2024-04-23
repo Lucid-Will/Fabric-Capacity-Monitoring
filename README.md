@@ -1,10 +1,12 @@
 # Overview
 
-Lucid Capacity Monitoring is an open-source project developed to monitor and analyze capacity metrics in a comprehensive and efficient manner. It provides a clear and concise view of various capacity metrics such as operations, users, durations, and capacity units.
+Lucid Capacity Monitoring is an open-source project developed to monitor and analyze Microsoft Fabric capacity metrics in a comprehensive and efficient manner. It aims to provide a clear and concise view of various capacity metrics such as operations, storage, and capacity unit consumption.
+
+The Lucid monitoring solution can also be used to assist with scoping exercises such as determining how much compute would be needed to run various workloads. For example, for a team considering Fabric, `the Lucid monitoring solution can be used along with a Fabric trial capacity to monitor activity over a duration of time enabling more accurate provisioning of capacity resources`.
 
 Features:
-- **Capacity Metrics**: Monitor various capacity metrics like cancelled operations, failed operations, total operations, rejected operations, successful operations, users, minutes throttled, and capacity units consumed.
-- **Data Visualization**: The data is organized in a clear and understandable format, making it easy to visualize and interpret.
+- **Capacity Metrics**: Monitor various capacity metrics like operations, users, minutes throttled, storage used, and capacity units consumed.
+- **Data Visualization**: The data is organized into a staging and dimensional layer. The Power BI monitoring report allows for analysis of capacity metrics and storage data in a clear and understandable format, allowing users to identify potential outliers and bottlenecks in their consumption.
 - **Data Analysis**: Analyze the capacity metrics data to gain insights and make informed decisions.
 
 The main functionality is implemented in the `semantic_model_bim/lucid_capacity_monitor.bim` file. This file contains the definitions of the capacity metrics and their calculations.

@@ -1,6 +1,6 @@
 {
   "name": "Lucid Capacity Monitor",
-  "id": "7ba2daae-de6e-4cb0-87cc-d298c1027126",
+  "id": "5965211b-8491-4791-998f-b6d53551864d",
   "compatibilityLevel": 1604,
   "model": {
     "culture": "en-US",
@@ -2029,7 +2029,7 @@
           {
             "name": "Static Storage (GB)",
             "expression": "SUM('Workspace Storage'[Static Storage Gb])",
-            "formatString": "$ #,##0.00",
+            "formatString": "#,##0.00",
             "displayFolder": "Workspace Storage\\Storage",
             "lineageTag": "14064c1a-ce65-42c6-a045-db4aee337bdb"
           },
@@ -2041,7 +2041,7 @@
               "    ,[Static Storage (GB)]",
               ")"
             ],
-            "formatString": "$ #,##0.00",
+            "formatString": "#,##0.00",
             "displayFolder": "Workspace Storage\\Storage",
             "lineageTag": "ff120475-d1b8-4c2d-81a2-7be412c0878f"
           }
@@ -2144,9 +2144,9 @@
         "kind": "m",
         "expression": [
           "let",
-          "    database = Sql.Database(\"OYC7JCIEQ54UTC7NIRQTZ24V34-5WXCWISZNGHUJL4WZSZJTOEUSM.datawarehouse.fabric.microsoft.com\", \"6041f7ae-10b4-4145-a6e1-0e144f9388bf\")",
+          "\tdatabase = Sql.Database(\"oyc7jcieq54utc7nirqtz24v34-wv32hbnqpcuupcfbaduqxgpj6m.datawarehouse.fabric.microsoft.com\", \"b0a16d97-4396-468c-b8ac-254b63537570\")",
           "in",
-          "    database"
+          "\tdatabase"
         ],
         "lineageTag": "96b3bb6e-1154-492b-b5b6-0771da305657",
         "annotations": [
@@ -2176,7 +2176,7 @@
       },
       {
         "name": "TabularEditor_SerializeOptions",
-        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Shared Expressions\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"],\"TmdlOptions\":{\"IncludeRefs\":false,\"ExpressionTrimStyle\":\"TrimTrailingWhitespaces\"}}"
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Shared Expressions\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"]}"
       }
     ]
   }

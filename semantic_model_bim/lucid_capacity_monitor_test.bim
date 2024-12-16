@@ -1,0 +1,2183 @@
+{
+  "name": "Lucid Capacity Monitor",
+  "id": "5965211b-8491-4791-998f-b6d53551864d",
+  "compatibilityLevel": 1604,
+  "model": {
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Semantic Model Refresh Log",
+        "isHidden": true,
+        "lineageTag": "7ff06c61-3595-46a7-8f23-5df7d214cb8f",
+        "sourceLineageTag": "[dbo].[log_refresh_execution]",
+        "columns": [
+          {
+            "name": "Start Time",
+            "dataType": "dateTime",
+            "sourceColumn": "start_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "2c1135ec-445f-46cf-b01f-6500e4255f06",
+            "sourceLineageTag": "start_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "End Time",
+            "dataType": "dateTime",
+            "sourceColumn": "end_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "36932ef2-e55f-4b43-8588-d3b060ca643b",
+            "sourceLineageTag": "end_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Type",
+            "dataType": "string",
+            "sourceColumn": "type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "94f0f979-671d-4267-b105-939493c6bb06",
+            "sourceLineageTag": "type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Commit Mode",
+            "dataType": "string",
+            "sourceColumn": "commit_mode",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "484d8d66-0ee4-4396-a5ac-6f429e453b57",
+            "sourceLineageTag": "commit_mode",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "status",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "04cabbdf-0511-4459-acdf-82148f4b0f39",
+            "sourceLineageTag": "status",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Extended Status",
+            "dataType": "string",
+            "sourceColumn": "extended_status",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "095df7ca-80ad-4587-b5ec-df788360217d",
+            "sourceLineageTag": "extended_status",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Current Refresh Type",
+            "dataType": "string",
+            "sourceColumn": "current_refresh_type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "2c4f3f85-95d0-43e6-b72c-c4d2d6bc03dc",
+            "sourceLineageTag": "current_refresh_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Number Of Attempts",
+            "dataType": "int64",
+            "sourceColumn": "number_of_attempts",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "28da4042-4d12-4ea3-a9eb-dea197df7bc7",
+            "sourceLineageTag": "number_of_attempts",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Metrics Workspace",
+            "dataType": "string",
+            "sourceColumn": "capacity_metrics_workspace",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "d7d2d870-4cbb-449b-8186-4c79751352dc",
+            "sourceLineageTag": "capacity_metrics_workspace",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Metrics Model",
+            "dataType": "string",
+            "sourceColumn": "capacity_metrics_model",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "cf909ffd-05e7-46ff-bbf3-9662d6abd5ba",
+            "sourceLineageTag": "capacity_metrics_model",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "log_refresh_execution",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "log_refresh_execution",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "lineageTag": "127a282a-9167-4a5f-950f-1d95163d4322",
+        "sourceLineageTag": "[dbo].[dim_date]",
+        "columns": [
+          {
+            "name": "Calendar Date Key",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "calendar_date_key",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "969bea20-59d6-4b13-bd74-ebc66ff74378",
+            "sourceLineageTag": "calendar_date_key",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Date",
+            "dataType": "dateTime",
+            "sourceColumn": "calendar_date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "lineageTag": "b2445e4d-20ef-47ab-8034-53581190b1a9",
+            "sourceLineageTag": "calendar_date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Weekday Number",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "calendar_weekday_number",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "2fd20695-0602-4aa0-8c81-03e3c6817a45",
+            "sourceLineageTag": "calendar_weekday_number",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Weekday",
+            "dataType": "string",
+            "sourceColumn": "calendar_weekday",
+            "sortByColumn": "Calendar Weekday Number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "272a0d6f-ba93-4e36-a651-96e6beac91c0",
+            "sourceLineageTag": "calendar_weekday",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Month Number",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "calendar_month_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "a1fb89bb-2aca-4260-85dd-4f9dd0020e6c",
+            "sourceLineageTag": "calendar_month_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Month",
+            "dataType": "string",
+            "sourceColumn": "calendar_month",
+            "sortByColumn": "Calendar Month Number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "f8e092da-3f8a-4a8b-9a9d-b99e915f7bde",
+            "sourceLineageTag": "calendar_month",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year Month Number",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "calendar_year_month_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "df3028d1-bb04-4d8e-8698-f7e75c0f027e",
+            "sourceLineageTag": "calendar_year_month_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Month Year",
+            "dataType": "string",
+            "sourceColumn": "calendar_month_year",
+            "sortByColumn": "Calendar Year Month Number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "2aea2021-893b-43f6-ad55-f49430c262ea",
+            "sourceLineageTag": "calendar_month_year",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Quarter Number",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "calendar_quarter_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "91566965-a3b0-4b82-8106-5474aaa5d1ab",
+            "sourceLineageTag": "calendar_quarter_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Quarter",
+            "dataType": "string",
+            "sourceColumn": "calendar_quarter",
+            "sortByColumn": "Calendar Quarter Number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "4cd28acc-51be-432a-98e9-4ceeccd81057",
+            "sourceLineageTag": "calendar_quarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Year Number",
+            "dataType": "int64",
+            "sourceColumn": "calendar_year_number",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "f81b2406-b87a-4a33-8e41-e70ca5b3d87a",
+            "sourceLineageTag": "calendar_year_number",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "28eab803-eec0-46cd-93ec-109c8e6478f6",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "b8bfed17-f36c-4d28-9771-29dc75ce601f",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_date",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dim_date",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Workspace",
+        "lineageTag": "85aa1330-9cf7-44e2-898d-446a42aa5a0d",
+        "sourceLineageTag": "[dbo].[dim_workspace]",
+        "columns": [
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "workspace_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "28c69932-0327-40f9-b2ea-68d05601eee9",
+            "sourceLineageTag": "workspace_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Workspace Name",
+            "dataType": "string",
+            "sourceColumn": "workspace_name",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "bd9aac76-466c-4020-942e-e3b60f28b6ba",
+            "sourceLineageTag": "workspace_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "capacity_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "c1e55cf7-7073-49ce-9d77-f60ab53fccb2",
+            "sourceLineageTag": "capacity_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "eb4271ff-06f2-4015-9853-b4b6e7c417d6",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "12d0339a-d2d8-44a2-8f63-df0902608d3c",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_workspace",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dim_workspace",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Workspace Storage",
+        "lineageTag": "6498455e-65df-4fed-8424-5a0986e7a5f9",
+        "sourceLineageTag": "[dbo].[fact_workspace_storage]",
+        "columns": [
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "workspace_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "20888735-24c2-42f3-a269-0e8ff2a586af",
+            "sourceLineageTag": "workspace_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "capacity_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "80b52511-6bba-466f-bb1a-a09ce8860095",
+            "sourceLineageTag": "capacity_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "lineageTag": "cd9425de-9663-4270-a9cb-f834c025f725",
+            "sourceLineageTag": "date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "7f07c9b9-68ed-43cc-90ba-3080746fec0b",
+            "sourceLineageTag": "date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Billing Type Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "billing_type_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "08cbcba2-b34e-4afc-9491-9ecfe2a4c3e5",
+            "sourceLineageTag": "billing_type_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Operation Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "operation_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "32338f7f-f3c9-4cc5-86fe-c3258cf066e8",
+            "sourceLineageTag": "operation_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Workload Kind",
+            "dataType": "string",
+            "sourceColumn": "workload_kind",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "bd5c09b3-b577-430c-acc6-8b789fd61712",
+            "sourceLineageTag": "workload_kind",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Storage Type",
+            "dataType": "string",
+            "sourceColumn": "storage_type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "d0199493-3ef1-4bc8-b50e-dcb1e1f66f55",
+            "sourceLineageTag": "storage_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Static Storage Gb",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "static_storage_gb",
+            "sourceProviderType": "float",
+            "lineageTag": "511b4328-1dbd-4d45-9b67-e452cc030307",
+            "sourceLineageTag": "static_storage_gb",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Static Storage Standard Cost",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "static_storage_standard_cost",
+            "sourceProviderType": "float",
+            "lineageTag": "3a08d14b-ea29-4a2f-9c16-c93b85d5639b",
+            "sourceLineageTag": "static_storage_standard_cost",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Utilization Gb",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "utilization_gb",
+            "sourceProviderType": "float",
+            "lineageTag": "c446d6b2-9e2a-43bd-b73d-1078bc554fb2",
+            "sourceLineageTag": "utilization_gb",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "b2412d03-88c5-48c7-bfcb-68fc8931120a",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "27d06265-f1f0-4817-819c-094827e204d5",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_workspace_storage",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "fact_workspace_storage",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Billing Type",
+        "lineageTag": "ba6793f1-da1d-4eff-ace9-effe69fefacb",
+        "sourceLineageTag": "[dbo].[dim_billing_type]",
+        "columns": [
+          {
+            "name": "Billing Type Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "billing_type_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "4f7e2f9e-ce4d-4573-b7a9-f668b9040171",
+            "sourceLineageTag": "billing_type_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Billing Type",
+            "dataType": "string",
+            "sourceColumn": "billing_type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "2d62c11c-6ff2-47d6-8670-324d6902962c",
+            "sourceLineageTag": "billing_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "478be27f-2f57-4959-bd4c-dfcd861c7fcd",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "updated_date_time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Updated Date Time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "1f0294af-ff40-4af1-a00f-fe281e35465e",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_billing_type",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dim_billing_type",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Operation",
+        "lineageTag": "504b9be7-0dc4-4529-b2f0-34e947544cd9",
+        "sourceLineageTag": "[dbo].[dim_fabric_operations]",
+        "columns": [
+          {
+            "name": "Operation Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "operation_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "008638c6-698d-47c1-a778-40e57594d5f1",
+            "sourceLineageTag": "operation_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Operation Name",
+            "dataType": "string",
+            "sourceColumn": "operation_name",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "acd9e6f1-a00d-4d86-be73-0d6474c2256c",
+            "sourceLineageTag": "operation_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "dd1f5541-8801-4d2e-817d-877e35f274b4",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "f5aab5dc-1868-44b5-91c5-8ef97135e0b8",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_fabric_operations",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dim_fabric_operations",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Capacity",
+        "lineageTag": "9b40c0b2-13f6-411d-bec7-44484344d617",
+        "sourceLineageTag": "[dbo].[dim_capacity]",
+        "columns": [
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "capacity_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "6601379d-3be9-4461-9d04-e93d18860ec3",
+            "sourceLineageTag": "capacity_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Name",
+            "dataType": "string",
+            "sourceColumn": "capacity_name",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "4e95f97d-0917-4964-9b62-40ac86b65722",
+            "sourceLineageTag": "capacity_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Sku",
+            "dataType": "string",
+            "sourceColumn": "sku",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "ab71e346-f0de-4e53-9f59-4d68f4fe71e0",
+            "sourceLineageTag": "sku",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "region",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "45269f37-f0c2-4b11-a5f0-5236bdac6dec",
+            "sourceLineageTag": "region",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Unit",
+            "dataType": "int64",
+            "sourceColumn": "capacity_unit",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "e862a1fb-9ced-47b6-9c63-3a74e0c18186",
+            "sourceLineageTag": "capacity_unit",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Pay Go Hour",
+            "dataType": "double",
+            "sourceColumn": "pay_go_hour",
+            "sourceProviderType": "float",
+            "lineageTag": "c15e522f-5239-4f74-9697-3cafa3f3815a",
+            "sourceLineageTag": "pay_go_hour",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Reservation Hour",
+            "dataType": "double",
+            "sourceColumn": "reservation_hour",
+            "sourceProviderType": "float",
+            "lineageTag": "e5002299-55c5-4ca3-965b-13f75b04518e",
+            "sourceLineageTag": "reservation_hour",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Onelake Storage Cost",
+            "dataType": "string",
+            "sourceColumn": "onelake_storage_cost",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "514d76df-b6db-4cda-b654-d7cd91ecf36d",
+            "sourceLineageTag": "onelake_storage_cost",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Onelake Bcdr Storage Cost",
+            "dataType": "string",
+            "sourceColumn": "onelake_bcdr_storage_cost",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "6f2325b6-af83-4e7f-836a-71d794b92198",
+            "sourceLineageTag": "onelake_bcdr_storage_cost",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Onelake Cache Cost",
+            "dataType": "string",
+            "sourceColumn": "onelake_cache_cost",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "adf16562-6898-4285-875f-1dbf996d754c",
+            "sourceLineageTag": "onelake_cache_cost",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "State",
+            "dataType": "string",
+            "sourceColumn": "state",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "d0cc8e11-6a8c-491b-a56d-cfe837f0bfe0",
+            "sourceLineageTag": "state",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "79b71f93-44bf-42fa-9dbd-f7de850113f9",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "4287f426-369d-4e1b-91b6-1f88425b1a01",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_capacity",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dim_capacity",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Item",
+        "lineageTag": "882ec3db-fd94-4665-ae45-9cb70640b158",
+        "sourceLineageTag": "[dbo].[dim_item]",
+        "columns": [
+          {
+            "name": "Item Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "item_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "9882cff0-718e-4c3b-92c0-0533325418e3",
+            "sourceLineageTag": "item_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "workspace_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "e9f05211-1b47-499e-99f6-910803fbc682",
+            "sourceLineageTag": "workspace_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Item Name",
+            "dataType": "string",
+            "sourceColumn": "item_name",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "eb68c88c-656c-443b-9177-1fcaf64abfc3",
+            "sourceLineageTag": "item_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Item Type",
+            "dataType": "string",
+            "sourceColumn": "item_type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "4b1e7808-34a0-4c93-8d11-321d46317ffb",
+            "sourceLineageTag": "item_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "fee22539-182e-470f-8ce7-5e4aef64e557",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "6449afac-acf5-4f63-ae77-8181ef846e08",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_item",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dim_item",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Capacity Metrics",
+        "lineageTag": "9edd8502-50f0-471b-9672-0fc76e6f805e",
+        "sourceLineageTag": "[dbo].[fact_capacity_metrics]",
+        "columns": [
+          {
+            "name": "Capacity Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "capacity_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "8f209a9d-7825-471e-babe-cda81b138ab6",
+            "sourceLineageTag": "capacity_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Workspace Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "workspace_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "08bef504-7039-48b8-bafd-3846d98f6ee8",
+            "sourceLineageTag": "workspace_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Item Id",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "item_id",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "2b3c4bc8-0597-4fca-b71a-74cbb1657527",
+            "sourceLineageTag": "item_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "lineageTag": "415e98a7-465e-41dc-8c84-7c8b93d1884f",
+            "sourceLineageTag": "date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date Time",
+            "dataType": "dateTime",
+            "sourceColumn": "date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "318e0d47-ea9e-4c4e-9894-08d4ac681dd3",
+            "sourceLineageTag": "date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Operation Id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "operation_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "c5f50535-b2d7-4ede-805c-d4cd4890b5ea",
+            "sourceLineageTag": "operation_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Unit Seconds Consumed",
+            "dataType": "double",
+            "sourceColumn": "capacity_unit_seconds_consumed",
+            "formatString": "#,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "aabe234c-1f78-4c6e-a27f-b49ab724d885",
+            "sourceLineageTag": "capacity_unit_seconds_consumed",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Capacity Units Consumed",
+            "dataType": "double",
+            "sourceColumn": "capacity_units_consumed",
+            "formatString": "#,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "e3919498-88df-46e0-a65b-5fb166dbe40e",
+            "sourceLineageTag": "capacity_units_consumed",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Activity Cost Pay Go",
+            "dataType": "double",
+            "sourceColumn": "activity_cost_pay_go",
+            "formatString": "$ #,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "064040f6-b606-42ac-9e93-acebea0e69f7",
+            "sourceLineageTag": "activity_cost_pay_go",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Activity Cost Reservation",
+            "dataType": "double",
+            "sourceColumn": "activity_cost_reservation",
+            "formatString": "$ #,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "745ca3fa-26ba-4cc1-8552-7527cf8606a6",
+            "sourceLineageTag": "activity_cost_reservation",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Activity Duration",
+            "dataType": "double",
+            "sourceColumn": "activity_duration",
+            "formatString": "#,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "23f69033-007a-4710-b038-8bfc842b8ade",
+            "sourceLineageTag": "activity_duration",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Total Operations",
+            "dataType": "int64",
+            "sourceColumn": "total_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "aa5b3f44-9c68-445d-a2f8-ad7d5f3f4fa6",
+            "sourceLineageTag": "total_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Users",
+            "dataType": "int64",
+            "sourceColumn": "users",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "08a25a34-42f6-426b-be73-a550bfb13640",
+            "sourceLineageTag": "users",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Average Activity Duration",
+            "dataType": "double",
+            "sourceColumn": "average_activity_duration",
+            "formatString": "#,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "83c6db37-10c2-48a1-b400-c1ce1701268f",
+            "sourceLineageTag": "average_activity_duration",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Minutes Throttled",
+            "dataType": "double",
+            "sourceColumn": "minutes_throttled",
+            "formatString": "#,##0.00",
+            "sourceProviderType": "float",
+            "lineageTag": "181b1496-4a4a-443b-8894-c76b8333bc68",
+            "sourceLineageTag": "minutes_throttled",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Failed Operations",
+            "dataType": "int64",
+            "sourceColumn": "failed_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "3af235f0-aae9-4443-aa1c-0bde6f289061",
+            "sourceLineageTag": "failed_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Rejected Operations",
+            "dataType": "int64",
+            "sourceColumn": "rejected_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "d448a486-cd5c-48e6-967f-a191d9fe92da",
+            "sourceLineageTag": "rejected_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Successful Operations",
+            "dataType": "int64",
+            "sourceColumn": "successful_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "2cd35a89-6c79-4f2f-b591-aa4e6a6d02f0",
+            "sourceLineageTag": "successful_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "In Progress Operations",
+            "dataType": "int64",
+            "sourceColumn": "in_progress_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "e0941c35-de67-4b37-9f5f-c73d7d21cfdb",
+            "sourceLineageTag": "in_progress_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Cancelled Operations",
+            "dataType": "int64",
+            "sourceColumn": "cancelled_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "03c7095d-1b81-4ba8-bb29-912ed2d63718",
+            "sourceLineageTag": "cancelled_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Invalid Operations",
+            "dataType": "int64",
+            "sourceColumn": "invalid_operations",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "f6b84018-ce05-4dec-ae3a-33ee133cdf7e",
+            "sourceLineageTag": "invalid_operations",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Inserted Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "inserted_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "967aff8e-e61e-49b3-8078-056cf8f98f4b",
+            "sourceLineageTag": "inserted_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Updated Date Time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "updated_date_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "lineageTag": "2bfd4717-f8a0-4537-9944-2a4d2199a3c7",
+            "sourceLineageTag": "updated_date_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_capacity_metrics",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "fact_capacity_metrics",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Measure Table",
+        "lineageTag": "e1b34636-0031-481d-bc55-930e8c4286fd",
+        "sourceLineageTag": "[dbo].[measure_table]",
+        "columns": [
+          {
+            "name": "Value",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Value",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "5759b41b-ef29-49f0-ad43-a37d13579a8b",
+            "sourceLineageTag": "Value",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "measure_table",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "measure_table",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "In Progress Operations",
+            "expression": "SUM ( 'Capacity Metrics'[In Progress Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "e3429a4d-d5c8-44cc-88f2-92d8fda27a45"
+          },
+          {
+            "name": "Cancelled Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Cancelled Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "c696a73c-c337-485d-84eb-c5cfd3a3c737"
+          },
+          {
+            "name": "Failed Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Failed Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "17536a4d-ce0c-4efd-bd42-8800d0b6b8a6"
+          },
+          {
+            "name": "Total Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Total Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "5ad251f4-476c-44e1-a7dd-04b96e6d8d5b"
+          },
+          {
+            "name": "Rejected Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Rejected Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "f4d2e0e5-ba48-429a-bc5f-d77e17e4d01c"
+          },
+          {
+            "name": "Successful Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Successful Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "0dc47279-d4ea-4904-b316-195ef16277dc"
+          },
+          {
+            "name": "Operation Fail Rate",
+            "expression": [
+              "DIVIDE(",
+              "    [Failed Operations]",
+              "    ,[Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "227cca62-1bc9-4c0f-a4e9-2c87f75c933e"
+          },
+          {
+            "name": "Operation Cancelled Rate",
+            "expression": [
+              "DIVIDE(",
+              "    [Cancelled Operations]",
+              "    ,[Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "57539461-c530-441a-ba56-fcbdac64f3b0"
+          },
+          {
+            "name": "Operation Invalid Rate",
+            "expression": [
+              "DIVIDE(",
+              "    [Invalid Operations]",
+              "    ,[Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "ed97844f-2508-4af7-b8a1-1796fdfc4401"
+          },
+          {
+            "name": "Operation Success Rate",
+            "expression": [
+              "DIVIDE (",
+              "    [Successful Operations],",
+              "    [Total Operations]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "fd368e40-bb9a-4813-8344-4e2a4fb0a0db"
+          },
+          {
+            "name": "Invalid Operations",
+            "expression": "SUM ( 'Capacity Metrics'[Invalid Operations] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Operations",
+            "lineageTag": "6a4e54fb-2a28-486d-9ddd-cd531b27da63"
+          },
+          {
+            "name": "Users",
+            "expression": "SUM ( 'Capacity Metrics'[Users] )",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Users",
+            "lineageTag": "18d42bad-a325-44b4-89a7-49e017f85537"
+          },
+          {
+            "name": "Activity Duration (seconds)",
+            "expression": "SUM ( 'Capacity Metrics'[Activity Duration] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Durations",
+            "lineageTag": "f2ebd55e-6cf3-4c2f-bf2b-9f02adaf5985"
+          },
+          {
+            "name": "Minutes Throttled",
+            "expression": "SUM ( 'Capacity Metrics'[Minutes Throttled] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Durations",
+            "lineageTag": "41e10ce9-b621-4a8d-9922-96dd430f8f1a"
+          },
+          {
+            "name": "Capacity Units Consumed",
+            "expression": "SUM ( 'Capacity Metrics'[Capacity Units Consumed] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "741a6c32-d611-4575-b96a-d963468f8823"
+          },
+          {
+            "name": "Capacity Unit Seconds Consumed",
+            "expression": "SUM ( 'Capacity Metrics'[Capacity Unit Seconds Consumed] )",
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "86759e58-22af-4c91-b19f-db401044988c"
+          },
+          {
+            "name": "Percentage of Daily Capacity Units Consumed",
+            "expression": [
+              "DIVIDE(",
+              "    [Capacity Unit Seconds Consumed]",
+              "    ,[Available Daily Capacity Unit Seconds]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "cc26692f-af5c-4894-b7cf-c1dd5e3c61ee"
+          },
+          {
+            "name": "Percentage of Hourly Capacity Units Consumed",
+            "expression": [
+              "DIVIDE(",
+              "    [Average Hourly Capacity Unit Seconds Consumed]",
+              "    ,[Available Hourly Capacity Unit Seconds]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "8bb5fa79-0802-40a9-a087-19019601afa8"
+          },
+          {
+            "name": "Available Daily Capacity Unit Seconds",
+            "expression": [
+              "VAR numberOfDays = COUNTROWS('Date')",
+              "RETURN",
+              "    MAX ( 'Capacity'[Capacity Unit] ) * 60 * 60 * 24 * numberOfDays"
+            ],
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "981b6245-b6ce-437e-9efc-98f61ac5cd4c"
+          },
+          {
+            "name": "Available Hourly Capacity Unit Seconds",
+            "expression": "MAX ( 'Capacity'[Capacity Unit] ) * 60 * 60",
+            "formatString": "#,##0",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "a071b42c-58c8-45a7-a242-d7e98a5ecce3"
+          },
+          {
+            "name": "Average Hourly Capacity Unit Seconds Consumed",
+            "expression": [
+              "AVERAGEX(",
+              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    ,[Capacity Unit Seconds Consumed]",
+              ")"
+            ],
+            "formatString": "#,##0.00",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "4e9914f4-4e18-4280-9c73-a1d2ea54ff45"
+          },
+          {
+            "name": "Average Hourly Percentage Consumption",
+            "expression": [
+              "AVERAGEX(",
+              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    ,[Percentage of Hourly Capacity Units Consumed]",
+              ")"
+            ],
+            "formatString": "#,##0.00 %",
+            "displayFolder": "Capacity Metrics\\Capacity Units",
+            "lineageTag": "dc33a3f8-8bfc-406f-b536-140c10f1c5c4"
+          },
+          {
+            "name": "Activity Cost (Reserved)",
+            "expression": "SUM ( 'Capacity Metrics'[Activity Cost Reservation] )",
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Capacity Metrics\\Costs",
+            "lineageTag": "c3608dc7-cf1d-4f0f-b8bd-cf069363d3e3"
+          },
+          {
+            "name": "Activity Cost (Pay Go)",
+            "expression": "SUM ( 'Capacity Metrics'[Activity Cost Pay Go] )",
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Capacity Metrics\\Costs",
+            "lineageTag": "1632f8df-7ddb-4582-a0f5-2636e8b2a456"
+          },
+          {
+            "name": "Average Hourly Activity Cost (Reserved)",
+            "expression": [
+              "AVERAGEX(",
+              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    ,[Activity Cost (Reserved)]",
+              ")"
+            ],
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Capacity Metrics\\Costs",
+            "lineageTag": "b9df14b8-dd26-4e05-8f2d-0aa93189b5c2"
+          },
+          {
+            "name": "Standard Storage Cost",
+            "expression": [
+              "SUMX(",
+              "    'Workspace Storage'",
+              "    ,'Workspace Storage'[Static Storage Gb] * RELATED(Capacity[Onelake Storage Cost])",
+              ")"
+            ],
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Workspace Storage\\Cost",
+            "lineageTag": "9ee1b8ed-564c-47d7-bbc6-d7ea98d4f125"
+          },
+          {
+            "name": "Average Storage Cost Per Day",
+            "expression": [
+              "AVERAGEX(",
+              "    VALUES( 'Date'[Calendar Date] )",
+              "    ,[Standard Storage Cost]",
+              ")"
+            ],
+            "formatString": "$ #,##0.00",
+            "displayFolder": "Workspace Storage\\Cost",
+            "lineageTag": "6f64b09c-3d3e-416e-819e-42d960521a6a"
+          },
+          {
+            "name": "Static Storage (GB)",
+            "expression": "SUM('Workspace Storage'[Static Storage Gb])",
+            "formatString": "#,##0.00",
+            "displayFolder": "Workspace Storage\\Storage",
+            "lineageTag": "14064c1a-ce65-42c6-a045-db4aee337bdb"
+          },
+          {
+            "name": "Average Storage (GB) Per Day",
+            "expression": [
+              "AVERAGEX(",
+              "    VALUES( 'Date'[Calendar Date] )",
+              "    ,[Static Storage (GB)]",
+              ")"
+            ],
+            "formatString": "#,##0.00",
+            "displayFolder": "Workspace Storage\\Storage",
+            "lineageTag": "ff120475-d1b8-4c2d-81a2-7be412c0878f"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "0f503edf-6fdc-b6a3-a34a-5944e3540b6a",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Billing Type Id",
+        "toTable": "Billing Type",
+        "toColumn": "Billing Type Id"
+      },
+      {
+        "name": "111c11c8-4281-8d7c-4d0b-0d0ee743d27d",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Capacity Id",
+        "toTable": "Capacity",
+        "toColumn": "Capacity Id"
+      },
+      {
+        "name": "95b81fab-b808-3804-38f0-318aa67efe40",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Date",
+        "toTable": "Date",
+        "toColumn": "Calendar Date"
+      },
+      {
+        "name": "3ce6907d-2827-59f5-0ffe-1444bf8b49a9",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Operation Id",
+        "toTable": "Operation",
+        "toColumn": "Operation Id"
+      },
+      {
+        "name": "9b9f3d22-2ce0-863f-444b-4a04c6c062ec",
+        "fromTable": "Workspace Storage",
+        "fromColumn": "Workspace Id",
+        "toTable": "Workspace",
+        "toColumn": "Workspace Id"
+      },
+      {
+        "name": "24596518-b24e-173a-dcc4-91507bf72559",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Capacity Id",
+        "toTable": "Capacity",
+        "toColumn": "Capacity Id"
+      },
+      {
+        "name": "29d193ca-b5c8-9dc7-168a-677c4a48608d",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Date",
+        "toTable": "Date",
+        "toColumn": "Calendar Date"
+      },
+      {
+        "name": "3641e46d-6c81-88e5-3c1f-f94b6e950725",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Item Id",
+        "toTable": "Item",
+        "toColumn": "Item Id"
+      },
+      {
+        "name": "d71d07e6-ed23-d530-21c0-e2c598bed42a",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Operation Id",
+        "toTable": "Operation",
+        "toColumn": "Operation Id"
+      },
+      {
+        "name": "cf838843-15bc-32af-627c-2f085a3e00d0",
+        "fromTable": "Capacity Metrics",
+        "fromColumn": "Workspace Id",
+        "toTable": "Workspace",
+        "toColumn": "Workspace Id"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": [
+          "let",
+          "\tdatabase = Sql.Database(\"oyc7jcieq54utc7nirqtz24v34-wv32hbnqpcuupcfbaduqxgpj6m.datawarehouse.fabric.microsoft.com\", \"b0a16d97-4396-468c-b8ac-254b63537570\")",
+          "in",
+          "\tdatabase"
+        ],
+        "lineageTag": "96b3bb6e-1154-492b-b5b6-0771da305657",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.129.7279.9 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"WebModelingEdit\"]"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Shared Expressions\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"]}"
+      }
+    ]
+  }
+}

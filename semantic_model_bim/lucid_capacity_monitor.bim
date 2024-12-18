@@ -835,10 +835,10 @@
             ]
           },
           {
-            "name": "update_datetime",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "Update Datetime",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "1f0294af-ff40-4af1-a00f-fe281e35465e",

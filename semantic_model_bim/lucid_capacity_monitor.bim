@@ -587,7 +587,7 @@
             ]
           },
           {
-            "name": "Date Time",
+            "name": "Datetime",
             "dataType": "dateTime",
             "sourceColumn": "datetime",
             "formatString": "General Date",
@@ -1388,7 +1388,7 @@
             ]
           },
           {
-            "name": "Date Time",
+            "name": "Datetime",
             "dataType": "dateTime",
             "sourceColumn": "datetime",
             "formatString": "General Date",
@@ -1956,7 +1956,7 @@
             "name": "Average Hourly Capacity Unit Seconds Consumed",
             "expression": [
               "AVERAGEX(",
-              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    VALUES( 'Capacity Metrics'[Datetime] )",
               "    ,[Capacity Unit Seconds Consumed]",
               ")"
             ],
@@ -1968,7 +1968,7 @@
             "name": "Average Hourly Percentage Consumption",
             "expression": [
               "AVERAGEX(",
-              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    VALUES( 'Capacity Metrics'[Datetime] )",
               "    ,[Percentage of Hourly Capacity Units Consumed]",
               ")"
             ],
@@ -1994,7 +1994,7 @@
             "name": "Average Hourly Activity Cost (Reserved)",
             "expression": [
               "AVERAGEX(",
-              "    VALUES( 'Capacity Metrics'[Date Time] )",
+              "    VALUES( 'Capacity Metrics'[Datetime] )",
               "    ,[Activity Cost (Reserved)]",
               ")"
             ],

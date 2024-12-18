@@ -375,13 +375,13 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "28eab803-eec0-46cd-93ec-109c8e6478f6",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -391,13 +391,13 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "b8bfed17-f36c-4d28-9771-29dc75ce601f",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -479,14 +479,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "eb4271ff-06f2-4015-9853-b4b6e7c417d6",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -496,14 +496,14 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "12d0339a-d2d8-44a2-8f63-df0902608d3c",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -727,14 +727,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "b2412d03-88c5-48c7-bfcb-68fc8931120a",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -744,14 +744,14 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "27d06265-f1f0-4817-819c-094827e204d5",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -818,14 +818,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "478be27f-2f57-4959-bd4c-dfcd861c7fcd",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -835,14 +835,14 @@
             ]
           },
           {
-            "name": "updated_date_time",
+            "name": "update_datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "Updated Date Time",
+            "sourceColumn": "Update Datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "1f0294af-ff40-4af1-a00f-fe281e35465e",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -909,14 +909,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "dd1f5541-8801-4d2e-817d-877e35f274b4",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -926,14 +926,14 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "f5aab5dc-1868-44b5-91c5-8ef97135e0b8",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1143,14 +1143,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "79b71f93-44bf-42fa-9dbd-f7de850113f9",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1160,14 +1160,14 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "4287f426-369d-4e1b-91b6-1f88425b1a01",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1264,14 +1264,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "fee22539-182e-470f-8ce7-5e4aef64e557",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1281,14 +1281,14 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "6449afac-acf5-4f63-ae77-8181ef846e08",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1689,14 +1689,14 @@
             ]
           },
           {
-            "name": "Inserted Date Time",
+            "name": "Insert Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "inserted_date_time",
+            "sourceColumn": "insert_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "967aff8e-e61e-49b3-8078-056cf8f98f4b",
-            "sourceLineageTag": "inserted_date_time",
+            "sourceLineageTag": "insert_datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1706,14 +1706,14 @@
             ]
           },
           {
-            "name": "Updated Date Time",
+            "name": "Update Datetime",
             "dataType": "dateTime",
             "isHidden": true,
-            "sourceColumn": "updated_date_time",
+            "sourceColumn": "update_datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "2bfd4717-f8a0-4537-9944-2a4d2199a3c7",
-            "sourceLineageTag": "updated_date_time",
+            "sourceLineageTag": "update_datetime",
             "summarizeBy": "none",
             "annotations": [
               {

@@ -589,11 +589,11 @@
           {
             "name": "Date Time",
             "dataType": "dateTime",
-            "sourceColumn": "date_time",
+            "sourceColumn": "datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "7f07c9b9-68ed-43cc-90ba-3080746fec0b",
-            "sourceLineageTag": "date_time",
+            "sourceLineageTag": "datetime",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1390,11 +1390,11 @@
           {
             "name": "Date Time",
             "dataType": "dateTime",
-            "sourceColumn": "date_time",
+            "sourceColumn": "datetime",
             "formatString": "General Date",
             "sourceProviderType": "datetime2",
             "lineageTag": "318e0d47-ea9e-4c4e-9894-08d4ac681dd3",
-            "sourceLineageTag": "date_time",
+            "sourceLineageTag": "datetime",
             "summarizeBy": "none",
             "annotations": [
               {

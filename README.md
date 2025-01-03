@@ -26,8 +26,6 @@ Follow these steps to import the Lucid Capacity Monitoring into your environment
 4. Import the configuration notebook to the desired workspace and run all
 5. Connect the pbix to the Lucid Capacity Monitoring direct lake semantic model
 
-[configuration notebook](configuration_notebook/Lucid%20BI%20Capacity%20Monitoring%20Config.ipynb)
-
 # Contribute
 
 Lucid Capacity Monitoring is a community-driven project, and contributions are welcome from all individuals. Whether you are helping to fix bugs, proposing new features, improving documentation, or working on the designs and tests, your input is valuable.
